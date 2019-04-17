@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Gtt logistcs</title>
+</head>
+<body>
+    <menu class="menu">
+        <div id="logo">
+            <a href="index.html">
+                    <i class="fas fa-truck-moving"></i>
+                    <h3>Cargo Manager</h3>
+            </a>
+        </div>
+        <ul>
+            <li> 
+                <a href="listaAgendamento.html">Lista de Agendamento</a>
+            </li>
+            <li> 
+                <a href="agendamento.html">Agendamento</a>
+            </li>
+            <li>
+                <a href="cadastroMotorista.html">Cadastro de motorista</a>
+            </li>
+            <li>
+                <a href="listaMotorista.html">Lista de motorista</a>
+            </li>
+            <li>
+                <a href="cadastroVeiculo.html">Cadastro de veiculo</a>
+            </li>
+            <li>
+                <a href="listaVeiculo.html">Lista de veiculo</a>
+            </li>
+        </ul>
+    </menu>
+
+    <form  id="formulario_veiculo" class="content">
+        <h1 class="titulo">Cadastro de veiculo</h1>
+        <h2>Placa do caminhão: </h2>
+        <input type="text" name="placa_veiculo"><br>
+        <h2>Número do renavam: </h2>
+        <input type="number" name="renavam_veiculo"><br>
+        <h2>Ano de fabricação:</h2>
+        <input type="date" name="ano_fabricacao_veiculo">
+        <h2>Ano de compra do veículo:</h2>
+        <input type="date" name="ano_compra_veiculo">
+        <h2>Carga máxima suportada:</h2>
+        <input type="number" name="carga_maxima_veiculo">
+        <h2>Número de eixos:</h2>
+        <input type="number" name="numero_eixos_veiculo">
+        <h2>comprimento total (em metros):</h2>
+        <input type="number" name="comprimento_veiculo">
+        </br>
+        <button class="button" onclick="enviar_formulario('veiculo')">enviar</button>
+    </form>
+</body>
+</html>

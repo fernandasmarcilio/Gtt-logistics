@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Gtt logistcs</title>
+</head>
+<body onload="carregaDados()">
+    <menu class="menu">
+            <div id="logo">
+                <a href="index.html">
+                        <i class="fas fa-truck-moving"></i>
+                        <h3>Cargo Manager</h3>
+                </a>
+            </div>
+            <ul>
+                <li> 
+                    <a href="listaAgendamento.html">Lista de Agendamento</a>
+                </li>
+                <li> 
+                    <a href="agendamento.html">Agendamento</a>
+                </li>
+                <li>
+                    <a href="cadastroMotorista.html">Cadastro de motorista</a>
+                </li>
+                <li>
+                    <a href="listaMotorista.html">Lista de motorista</a>
+                </li>
+                <li>
+                    <a href="cadastroVeiculo.html">Cadastro de veiculo</a>
+                </li>
+                <li>
+                    <a href="listaVeiculo.html">Lista de veiculo</a>
+                </li>
+            </ul>
+        </menu>
+
+        <form id="formulario_agendamento" class="content">
+                <h1 class="titulo">Agendamento</h1>
+                <h2>Motorista: </h2>
+                <select name="agendamento_motorista" id="agendamento_motorista">
+                        <option value="0">Nenhum selecionado</option> 
+                </select>
+                <h2>Veículo: </h2>
+                <select name="agendamento_veiculo" id="agendamento_veiculo">
+                        <option value="0">Nenhum selecionado</option> 
+                </select>
+                <h2>Data de entrada:</h2>
+                <input type="date" name="agendamento_data_entrada">
+                <h2>Data de saída:</h2>
+                <input type="date" name="agendamento_data_saida">
+                <h2>Tipo de operação:</h2>
+                <select name="agendamento_tipo_operacao" id="agendamento_motorista">
+                        <option value="0">Nenhum selecionado</option> 
+                        <option value="1">Carga</option> 
+                        <option value="2">Descarga</option> 
+                </select>
+                </br>
+                <button class="button" onclick="enviar_formulario('agendamento')">enviar</button>
+            </form>
+</body>
+</html>

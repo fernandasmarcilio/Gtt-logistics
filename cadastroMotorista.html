@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Gtt logistcs</title>
+</head>
+<body>
+    <menu class="menu">
+            <div id="logo">
+                <a href="index.html">
+                        <i class="fas fa-truck-moving"></i>
+                        <h3>Cargo Manager</h3>
+                </a>
+            </div>
+            <ul>
+                <li> 
+                    <a href="listaAgendamento.html">Lista de Agendamento</a>
+                </li>
+                <li> 
+                    <a href="agendamento.html">Agendamento</a>
+                </li>
+                <li>
+                    <a href="cadastroMotorista.html">Cadastro de motorista</a>
+                </li>
+                <li>
+                    <a href="listaMotorista.html">Lista de motorista</a>
+                </li>
+                <li>
+                    <a href="cadastroVeiculo.html">Cadastro de veiculo</a>
+                </li>
+                <li>
+                    <a href="listaVeiculo.html">Lista de veiculo</a>
+                </li>
+            </ul>
+        </menu>
+
+    <form id="formulario_motorista" class="content">
+        <h1 class="titulo">Cadastro de motorista</h1>
+        <h2>Nome: </h2>
+        <input type="text" name="nome_motorista" ><br>
+        <h2>Sobrenome: </h2>
+        <input type="text" name="sobrenome_motorista" ><br>
+        <h2>Data de nascimento:</h2>
+        <input type="date" name="nascimento_motorista">
+        <h2>CPF:</h2>
+        <input type="number" name="cpf_motorista">
+        <h2>Numero da carteira de motorista:</h2>
+        <input type="number" name="numero_carteira_motorista">
+        <h2>Endereço:</h2>
+        <input type="text" name="endereco_motorista">
+        <h2>E-mail:</h2>
+        <input type="email" name="email_motorista">
+        <h2>Celular:</h2>
+        <input type="number" name="celular_motorista">
+        </br>
+        <button class="button" onclick="enviar_formulario('motorista')">enviar</button>
+    </form>
+</body>
+</html>
